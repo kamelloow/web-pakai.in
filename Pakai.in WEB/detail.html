@@ -1,0 +1,95 @@
+<!DOCTYPE html><!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Pakai.in - Detail Produk</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Instrument+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <div class="woman-top">
+    <div class="woman-header-left">
+      <button class="back-btn" id="backBtn" title="Kembali">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M15 18l-6-6 6-6"></path>
+        </svg>
+      </button>
+      <h1 class="woman-title" id="pageTitle">Woman</h1>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <section class="detail-wrapper">
+
+   <div class="detail-image">
+  <img id="productImage" src="img/pakaian1.jpg" class="face"> 
+  <div class="price-section">
+    <div>
+      <p class="desc" id="productName">COLORBOX</p>
+      <span class="price" id="productPrice">Rp 241.910</span>
+    </div>
+    <button class="heart-btn" onclick="this.classList.toggle('active')">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+      </svg>
+    </button>
+  </div>
+</div>
+
+    <div class="detail-info">
+
+      <h2 class="pakaiin-logo">Pakài.in</h2>
+
+      <h3>Informasi Produk</h3>
+      <p><b>Nama Produk:</b> <span id="productFullName">YBN FULL STONE MUS</span></p>
+      <p><b>SKU:</b> <span id="productSKU">E1D15KCF1F3ECEGS</span></p>
+      <p><b>Warna:</b> <span id="productColor">Mustard</span></p>
+      <p><b>Kelompok Usia:</b> <span id="productAge">8–12 tahun (Junior)</span></p>
+      <p><b>Jenis Kelamin:</b> <span id="productGender">Boys</span></p>
+
+      <h3>Penilaian & Ulasan</h3>
+      <p><b>Rating:</b> <span id="productRating">⭐ 5/5 (1 ulasan)</span></p>
+      <p id="productReview">Kualitas sangat baik</p>
+
+      <div id="zaloraSection" style="margin-top: 32px; padding: 20px; border-top: 2px solid #FF71B6; background: #FFF5F9; border-radius: 12px; display: none;">
+        <p id="zaloraInfo" style="color: #FF71B6; font-weight: 600; margin: 0 0 12px 0; font-size: 13px; text-transform: uppercase;">🔗 Beli Produk Ini di Zalora</p>
+        <a id="zaloraButton" href="#" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #FF71B6 0%, #FF5A9F 100%); color: white; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 15px; transition: all 0.3s ease; cursor: pointer; box-shadow: 0 4px 12px rgba(255, 113, 182, 0.3);">
+          🛒 Beli Sekarang di Zalora
+        </a>
+      </div>
+
+      <div id="colorboxSection" style="margin-top: 32px; padding: 20px; border-top: 2px solid #FF71B6; background: #FFF5F9; border-radius: 12px; display: none;">
+        <p style="color: #FF71B6; font-weight: 600; margin: 0 0 12px 0; font-size: 13px; text-transform: uppercase;">🔗 Beli Produk Ini di Colorbox</p>
+        <a id="colorboxButton" href="https://www.colorbox.id" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #FF71B6 0%, #FF5A9F 100%); color: white; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 15px; transition: all 0.3s ease; cursor: pointer; box-shadow: 0 4px 12px rgba(255, 113, 182, 0.3);">
+          🛒 Beli Sekarang di Colorbox
+        </a>
+      </div>
+
+      <div id="uniqloSection" style="margin-top: 32px; padding: 20px; border-top: 2px solid #FF71B6; background: #FFF5F9; border-radius: 12px; display: none;">
+        <p style="color: #FF71B6; font-weight: 600; margin: 0 0 12px 0; font-size: 13px; text-transform: uppercase;">🔗 Beli Produk Ini di Uniqlo</p>
+        <a id="uniqloButton" href="https://www.uniqlo.com" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #FF71B6 0%, #FF5A9F 100%); color: white; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 15px; transition: all 0.3s ease; cursor: pointer; box-shadow: 0 4px 12px rgba(255, 113, 182, 0.3);">
+          🛒 Beli Sekarang di Uniqlo
+        </a>
+      </div>
+
+      <div id="nikeSection" style="margin-top: 32px; padding: 20px; border-top: 2px solid #FF71B6; background: #FFF5F9; border-radius: 12px; display: none;">
+        <p style="color: #FF71B6; font-weight: 600; margin: 0 0 12px 0; font-size: 13px; text-transform: uppercase;">🔗 Beli Produk Ini di Nike</p>
+        <a id="nikeButton" href="https://www.nike.com" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #FF71B6 0%, #FF5A9F 100%); color: white; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 15px; transition: all 0.3s ease; cursor: pointer; box-shadow: 0 4px 12px rgba(255, 113, 182, 0.3);">
+          🛒 Beli Sekarang di Nike
+        </a>
+      </div>
+
+
+    </div>
+
+  </section>
+
+  <script src="main.js"></script>
+
+</body>
+</html>

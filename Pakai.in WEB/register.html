@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register Pakai.in</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="body-login">
+  <div class="login-container">
+    <h2>Pakai.in</h2>
+    <p>Create your account</p>
+
+    <form onsubmit="return validateRegister()">
+
+      <div class="input-group">
+        <input type="email" id="reg-email" placeholder="Email" required>
+      </div>
+
+      <div class="input-group">
+        <input type="password" id="reg-password" placeholder="Password" required>
+      </div>
+
+      <div class="input-group">
+        <input type="password" id="reg-confirm" placeholder="Confirm Password" required>
+      </div>
+
+      <button type="submit">REGISTER</button>
+
+      <a href="index.html" class="kembali-icon">← Kembali ke Home</a>
+
+      <span class="register">
+        Already have an account? <a href="login.html">Login</a>
+      </span>
+
+    </form>
+  </div>
+</div>
+
+<script>
+function validateRegister() {
+  const password = document.getElementById("reg-password").value;
+  const confirm = document.getElementById("reg-confirm").value;
+
+  if (password !== confirm) {
+    alert("Password tidak sama!");
+    return false;
+  }
+
+  alert("Registrasi berhasil!");
+  window.location.href = "login.html";
+  return false;
+}
+</script>
+
+</body>
+</html>
